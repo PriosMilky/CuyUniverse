@@ -23,8 +23,11 @@ while True:
     if confirm == "y":
         if user_input == cuypy_position:
             print(f"CONGRATULATIONS {user_name} YOU WIN, , CUYPY POSITION IN {cuypy_position}")
+            exit()
         else:
             print(f"NO YOU LOSE, , CUYPY POSITION IN {cuypy_position} AND YOU SELECTED IS {user_input}")
             break
+    elif confirm == "n":
+        exit()
     else:
         print("PLEASE REPEAT AGAIN")
